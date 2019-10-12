@@ -1,0 +1,34 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+<h1>Register</h1>
+
+<form method="post">
+    <div class="form-group">
+        <label>Username: <input class="form-control" type="text" name="username" value="@ViewBag.username"/></label>
+        <p style="color: red">@ViewBag.usernameError</p>
+    </div>
+
+    <div class="form-group">
+        <label>Email: <input class="form-control" type="email" name="email" value="@ViewBag.email"/></label>
+        <p style="color: red">@ViewBag.emailError</p>
+    </div>
+
+    <div class="form-group">
+        <label>Password: <input class="form-control" type="password" name="password" /></label>
+        <p style="color: red">@ViewBag.passwordError</p>
+    </div>
+
+    <div class="form-group">
+        <label>Verify: <input class="form-control" type="password" name="verify" /></label>
+        <p style="color: red">@ViewBag.verifyError</p>
+    </div>
+    
+    
+    <input type="submit" value="Register" />
+    
+</form>
