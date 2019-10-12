@@ -1,23 +1,19 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿@model UserSignup.Models.User
 
 <table class="table">
     <tr>
         <td>Username:</td>
-        <td>@ViewBag.user.Username</td>
+        <td>@Model.Username</td>
     </tr>
 
     <tr>
         <td>Email:</td>
-        <td>@ViewBag.user.Email</td>
+        <td>@Model.Email</td>
     </tr>
 
     <tr>
         <td>Joined:</td>
-        <td>@ViewBag.user.JoinTime</td>
+        <td>@Model.JoinTime</td>
     </tr>
 
 </table>

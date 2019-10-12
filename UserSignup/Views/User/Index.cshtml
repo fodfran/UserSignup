@@ -1,18 +1,17 @@
 ﻿
-@{
-}
+@model List<UserSignup.Models.User>
 
 <h1>My Users</h1>
 
 
-@if (ViewBag.Users.Count == 0)
+@if (Model.Count == 0)
 {
     <p>No users yet!</p>
 }
 <p><a asp-controller="User" asp-action="Add"><button type="button">Add User</button></a></p>
 
    
-    @foreach (User user in ViewBag.Users)
+    @foreach (var user in Model)
     {
         <p><a asp-controller="User" asp-action="Info" asp-route-userId="@user.UserId">@user.Username</a></p>
     }
